@@ -1,0 +1,64 @@
+.country-flag {
+  position: relative;
+  display: inline-block;
+  vertical-align: inherit;
+  padding-bottom: 5px;
+  color: #4d4d4d;
+  text-align: left; }
+  .country-flag img {
+    width: 1.3em;
+    height: 1.3em;
+    position: relative;
+    top: 0.3em; }
+  .country-flag .selected--flag--option {
+    cursor: pointer;
+    padding: 0 8px; }
+    .country-flag .selected--flag--option:before {
+      content: ' ';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 999; }
+    .country-flag .selected--flag--option .country-label {
+      padding-left: 9px; }
+  .country-flag .country-flag {
+    cursor: pointer; }
+    .country-flag .country-flag .country-label {
+      font-size: 1em;
+      position: relative; }
+  .country-flag .flag-options {
+    position: absolute;
+    z-index: 999999;
+    border: 1px solid #bdbbbb;
+    border-radius: 3px;
+    background: #ffffff;
+    margin-top: 8px;
+    padding: 8px 0;
+    max-height: 160px;
+    overflow: auto; }
+    .country-flag .flag-options.to--left {
+      right: 10px; }
+  .country-flag .flag-option {
+    cursor: pointer;
+    padding: 0px 8px 3px 8px;
+    margin: 4px 0;
+    white-space: nowrap; }
+    .country-flag .flag-option.has-label {
+      padding: 0px 20px 3px 8px; }
+    .country-flag .flag-option:hover {
+      background: #eaeaea; }
+    .country-flag .flag-option .country-label {
+      padding: 0 9px; }
+  .country-flag .filterBox {
+    width: 100%; }
+    .country-flag .filterBox input {
+      width: 90%;
+      margin: 0 4%; }
+  .country-flag .arrow-down {
+    color: #4d4d4d;
+    padding: 2px; }
+  .country-flag .hidden {
+    display: none; }
+  .country-flag .no--focus {
+    pointer-events: none; }
